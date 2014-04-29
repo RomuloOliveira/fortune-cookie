@@ -14,10 +14,9 @@ Setup your email, your password and friend e-mail in `main.py` and run:
 1. Create a class in `parsers/` extending from `BaseCookieParser`
 2. Add host name (e.g. `fortunecookiemessage` from "www.fortunecookiemessage.com") to `parsers_map` in `parsers/factory.py`
 
+### How to add support to a new email server
+1. Create an dict entry in `servers_map` in `mail/factory.py` containing `host`, `port` and `tls`
+
 ### TODO
 - Friend list
 - Support for others fortune cookies websites
-- Support for others e-mail servers (gmail only for now)
-
-### Remarks
-If you are going to implement multiple e-mails servers, please follow parsers "architecture"
