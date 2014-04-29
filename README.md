@@ -20,3 +20,4 @@ Setup your email, your password and friend e-mail in `main.py` and run:
 ### TODO
 - Friend list
 - Support for others fortune cookies websites
+- Configurable user/pass/friend (JSON?)
