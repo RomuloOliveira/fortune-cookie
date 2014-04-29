@@ -1,7 +1,7 @@
 Daily Fortune Cookie
 ====================
 
-Send a fortune cookie message to your friend! Inspired by @tuannyharumi (and "Salmo do Dia")
+Send a fortune cookie message to your friend! Inspired by [@tuannyharumi](https://github.com/tuannyharumi) (and "Salmo do Dia")
 
 ### How to run
 Setup your email, your password and friend e-mail in `main.py` and run:  
