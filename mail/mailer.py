@@ -3,6 +3,8 @@
 
 import smtplib
 
+import factory
+
 class Mailer():
     def __init__(self, user, password):
         self._stmp_server = None
@@ -17,8 +19,14 @@ class Mailer():
         self.disconnect()
 
     def connect(self, user, password):
-        self._stmp_server = smtplib.SMTP('smtp.gmail.com', 587)
-        self._stmp_server.starttls()
+
+        config = factory.get_mailer_config(user)
+
+        self._stmp_server = smtplib.SMTP(config['host'], config['port'])
+
+        if config['tls']:
+            self._stmp_server.starttls()
+
         self._stmp_server.login(user, password)
 
     def disconnect(self):

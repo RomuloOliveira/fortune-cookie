@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import cookie_fetcher
-import mailer
+
+from mail import mailer
 
 if __name__ == '__main__':
     url = 'http://www.fortunecookiemessage.com'
