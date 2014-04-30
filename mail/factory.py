@@ -1,6 +1,5 @@
 #!/bin/env python
 # -*- coding: utf-8 -*-
-from . import * # import all parsers
 
 servers_map = {
     'gmail': {

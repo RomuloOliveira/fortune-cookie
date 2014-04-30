@@ -3,7 +3,7 @@
 
 import urlparse
 
-from . import * # import all parsers
+import fortunecookiemessage # import all parsers
 
 parsers_map = {
     'fortunecookiemessage': fortunecookiemessage.FortuneCookieMessageParser

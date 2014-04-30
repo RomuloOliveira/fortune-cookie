@@ -18,7 +18,7 @@ Setup your email, your password and friend e-mail in `main.py` and run:
 
 ### How to add support to a new email server
 1. Create an dict entry in `servers_map` in `mail/factory.py` containing `host`, `port` and `tls`
-2. Add test case in `tests/test_mail_servers.py`
+2. Add test case in `tests/test_mail.py`
 
 ### TODO
 - Friend list

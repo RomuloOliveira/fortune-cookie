@@ -10,24 +10,22 @@ class Mailer():
         self._stmp_server = None
         self.user = user
         self.password = password
+        self.config = factory.get_mailer_config(user)
 
     def __enter__(self):
-        self.connect(self.user, self.password)
+        self.connect()
         return self
 
     def __exit__(self, type, value, traceback):
         self.disconnect()
 
-    def connect(self, user, password):
+    def connect(self):
+        self._stmp_server = smtplib.SMTP(self.config['host'], self.config['port'])
 
-        config = factory.get_mailer_config(user)
-
-        self._stmp_server = smtplib.SMTP(config['host'], config['port'])
-
-        if config['tls']:
+        if self.config['tls']:
             self._stmp_server.starttls()
 
-        self._stmp_server.login(user, password)
+        self._stmp_server.login(self.user, self.password)
 
     def disconnect(self):
         self._stmp_server.close()
