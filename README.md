@@ -1,13 +1,16 @@
 Daily Fortune Cookie
 ====================
 
-Send a fortune cookie message to your friend! Inspired by [@tuannyharumi](https://github.com/tuannyharumi) (and "Salmo do Dia")
+Send a fortune cookie message to your friend! Inspired by [@tuannyharumi](https://github.com/tuannyharumi) (and "Salmo do Dia").
+
+### Purpose
+I started this project as a joke, but it turned out that it has potential and I will use it on examples in my (future) dev blog.
 
 ### Requirements
-None. Uses only builtin python modules
+None. Uses only builtin python modules.
 
 ### How to run
-Setup your email, your password and friend e-mail in `main.py` and run:  
+Setup your e-mail, your password and friend e-mail in `main.py` and run:  
 `python main.py`
 
 ### How to implement a new parser
