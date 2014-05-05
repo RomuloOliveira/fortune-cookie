@@ -4,7 +4,8 @@ Daily Fortune Cookie
 Send a fortune cookie message to your friend! Inspired by [@tuannyharumi](https://github.com/tuannyharumi) (and "Salmo do Dia")
 
 ### Requirements
-None. Uses only builtin python modules
+- [Requests 2.2.1](http://docs.python-requests.org/en/latest)  
+If you like, you can install all requirements with `sudo pip install -r requirements.txt`
 
 ### How to run
 Setup your email, your password and friend e-mail in `main.py` and run:  
