@@ -27,6 +27,6 @@ def get_mailer_config(email):
     server = _extract_name(email)
 
     if server not in servers_map:
-        raise ParserNotFound('Email server {} not found'.format(server))
+        raise EmailServerNotFound('Email server {} not found'.format(server))
 
     return servers_map[server]
