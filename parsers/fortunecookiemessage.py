@@ -22,14 +22,5 @@ class FortuneCookieMessageParser(base_parser.BaseCookieParser):
         if self._cookie_tag:
             self._message = data
 
-    def handle_comment(self, data):
-        pass
-
-    def handle_charref(self, name):
-        pass
-
-    def handle_decl(self, data):
-        pass
-
     def get_cookie_message(self):
         return self._message
