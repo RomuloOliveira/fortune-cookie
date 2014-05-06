@@ -21,3 +21,10 @@ class TestMailServers(unittest.TestCase):
         self.assertEqual(m.config['host'], 'smtp.gmail.com')
         self.assertEqual(m.config['port'], 587)
         self.assertEqual(m.config['tls'], True)
+
+    def test_raise(self):
+        email = 'email@foobar.com'
+        password = 'pass'
+
+        with self.assertRaises(factory.EmailServerNotFound) as cm:
+            m = mailer.Mailer(email, password)
