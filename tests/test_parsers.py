@@ -12,3 +12,9 @@ class TestParsers(unittest.TestCase):
 
         self.assertIsNotNone(parser)
         self.assertIsInstance(parser, fortunecookiemessage.FortuneCookieMessageParser)
+
+    def test_raise(self):
+        url = 'http://www.foobar.com'
+
+        with self.assertRaises(factory.ParserNotFound) as cm:
+            parser = factory.get_parser(url)
