@@ -1,4 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/romulooliveira/fortune-cookie.png?label=ready&title=Ready)](https://waffle.io/romulooliveira/fortune-cookie)
+
 Daily Fortune Cookie
 ====================
 
@@ -25,7 +26,3 @@ Setup your e-mail, your password and friend e-mail in `main.py` and run:
 1. Create an dict entry in `servers_map` in `mail/factory.py` containing `host`, `port` and `tls`
 2. Add test case in `tests/test_mail.py`
 
-### TODO
-- Friend list
-- Support for others fortune cookies websites
-- Configurable user/pass/friend (JSON?)
